@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Form</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <!-- Main -->
+    <div class="container">
+        <section class="card-section">
+            <div class="img-card-front-container">
+                <img src="/img/card-logo.svg" alt="Card Logo">
+                <p class="card-number">000 0000 0000 0000</p>
+                <div class="card-buttom">
+                    <p class="card-name">Jane Applesed</p>
+                    <p class="card-date">00/00</p>
+                </div>
+            </div>
+            <div class="img-card-back-container">
+                <p class="card-cvv">000</p>
+            </div>
+        </section>
+        <section class="form-section">
+            <form action="#" method="post" class="main-form">
+                <div class="form-part">
+                    <label for="cardholder-name" class="ch-name">Cardholder Name</label>
+                    <input type="text" name="cardholder-name" id="chinput-name" placeholder="e.g John Doe">
+                </div>
+                <div class="form-part">
+                    <label for="cardnumber" class="card-number">Card Number</label>
+                    <input type="number" name="cardnumber" id="cardinput-number" placeholder="1234-5678-91011">
+                    <span class="warning-text">Wrong format, number only</span>
+                </div>
+                <div class="form-bottom">
+                    <div class="form-part">
+                        <label for="card-date" class="card-date-section">Exp. Date (MM/YY)</label>
+                        <input type="number" name="card-date" id="cardinput-date" placeholder="MM">
+                        <input type="number" name="card-date" id="cardinput-year" placeholder="YY">
+                        <span class="warning-text">Cant Be Blank</span>
+                    </div>
+                    <div class="form-part">
+                        <label for="card-cvc" class="card-cvc-section">CVC</label>
+                        <input type="number" name="card-cvc" id="cardinput-cvc" placeholder="CVC">
+                        <span class="warning-text">Cant Be Blank</span>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </div>
+    <!-- Footer -->
+    <script src="/app.js"></script>
+</body>
+</html>
