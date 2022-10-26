@@ -6,3 +6,30 @@
     padding: 0;
     font-family: "Space Grotesk", sans-serif;
 }
+
+/* Desktop Style */
+.container, .form-part, .form-bottom, .month-and-year-container {
+    display: flex;
+}
+.container {
+    margin-top: 50px;
+}
+/* Form Section */
+.card-section {
+    margin-left: 200px;
+}
+.form-section {
+    margin-left: 250px;
+}
+.form-part {
+    flex-direction: column;
+}
+.month-and-year-container {
+    flex-direction: row;
+}
+.input-form {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    width: 16   0px;
+    height: 30px;
+}

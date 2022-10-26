@@ -27,23 +27,25 @@
             <form action="#" method="post" class="main-form">
                 <div class="form-part">
                     <label for="cardholder-name" class="ch-name">Cardholder Name</label>
-                    <input type="text" name="cardholder-name" id="chinput-name" placeholder="e.g John Doe">
+                    <input type="text" name="cardholder-name" id="chinput-name" class="input-form" placeholder="e.g John Doe">
                 </div>
                 <div class="form-part">
                     <label for="cardnumber" class="card-number">Card Number</label>
-                    <input type="number" name="cardnumber" id="cardinput-number" placeholder="1234-5678-91011">
+                    <input type="number" name="cardnumber" id="cardinput-number" class="input-form" placeholder="1234-5678-91011">
                     <span class="warning-text">Wrong format, number only</span>
                 </div>
                 <div class="form-bottom">
                     <div class="form-part">
                         <label for="card-date" class="card-date-section">Exp. Date (MM/YY)</label>
-                        <input type="number" name="card-date" id="cardinput-date" placeholder="MM">
-                        <input type="number" name="card-date" id="cardinput-year" placeholder="YY">
+                        <div class="month-and-year-container">
+                            <input type="number" name="card-date" id="cardinput-date" class="input-form" placeholder="MM">
+                            <input type="number" name="card-date" id="cardinput-year" class="input-form" placeholder="YY">
+                        </div>
                         <span class="warning-text">Cant Be Blank</span>
                     </div>
                     <div class="form-part">
                         <label for="card-cvc" class="card-cvc-section">CVC</label>
-                        <input type="number" name="card-cvc" id="cardinput-cvc" placeholder="CVC">
+                        <input type="number" name="card-cvc" id="cardinput-cvc" class="input-form" placeholder="CVC">
                         <span class="warning-text">Cant Be Blank</span>
                     </div>
                 </div>
