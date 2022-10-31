@@ -8,6 +8,13 @@
 }
 
 /* Desktop Style */
+body{
+    background-image: url(/img/bg-main-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    background-size: 35%;
+}
 .container, .form-part, .form-bottom, .month-and-year-container {
     display: flex;
 }
@@ -24,11 +31,12 @@
     visibility: hidden;
 }
 .container {
-    margin-top: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 /* Form Section */
 .card-section {
-    margin-left: 200px;
+    margin-left: 85px;
 }
 .form-section {
     margin-left: 250px;
@@ -67,8 +75,34 @@
 }
 
 /* Right section */
+/* First card */
 .img-card-front-container {
     background-image: url(/img/bg-card-front.png);
     width: 447px;
     height: 245px;
+    color: #fff;
+}
+.img-card-upper-section, .img-card-buttom-section {
+    padding: 20px;
+}
+.img-card-buttom-section {
+    display: flex;
+    gap: 200px;
+}
+.card-number {
+    margin-top: 20px;
+}
+/* End of First Card */
+/* Second Card */
+.img-card-back-container {
+    margin-top: 85px;
+    margin-left: 85px;
+    background-image: url(/img/bg-card-back.png);
+    width: 447px;
+    height: 245px;
+}
+.card-cvv {
+    text-align: right;
+    padding-top: 110px;
+    margin-right: 50px;
 }
