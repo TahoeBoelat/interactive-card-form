@@ -22,7 +22,7 @@ body{
     font-size: 18px;
     text-transform: uppercase;
 }
-.input-form, .input-form-month, .input-form-year {
+.input-form-CVV, .input-form-month, .input-form-year {
     padding-left: 10px;
 }
 .warning-text {
@@ -39,7 +39,7 @@ body{
     margin-left: 85px;
 }
 .form-section {
-    margin-left: 250px;
+    margin-left: 200px;
 }
 .form-part {
     flex-direction: column;
@@ -48,7 +48,7 @@ body{
     gap: 15px;
     flex-direction: row;
 }
-.input-form {
+.input-form, .input-form-CVV {
     margin-top: 15px;
     margin-bottom: 15px;
     width: 175px;
@@ -87,9 +87,13 @@ body{
 }
 .img-card-buttom-section {
     display: flex;
-    gap: 200px;
+    gap: 150px;
 }
-.card-number {
+.date {
+    display: flex;
+    gap: 5px;
+}
+.img-card-number {
     margin-top: 20px;
 }
 /* End of First Card */
@@ -105,4 +109,16 @@ body{
     text-align: right;
     padding-top: 110px;
     margin-right: 50px;
+}
+/* Complete state */
+.complete-state-form {
+    text-align: center;
+}
+.complete-state-title {
+    margin-top: 15px;
+    font-weight: 200;
+}
+.complete-state-paragraph {
+    margin-top: 12px;
+    color:  hsl(279, 6%, 55%);
 }

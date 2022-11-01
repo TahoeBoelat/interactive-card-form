@@ -14,42 +14,51 @@
             <div class="img-card-front-container">
                 <div class="img-card-upper-section">
                     <img src="/img/card-logo.svg" alt="Card Logo">
-                    <p class="card-number">000 0000 0000 0000</p>
+                    <p id="imgcardNumber" class="img-card-number">000 0000 0000 0000</p>
                 </div>
                 <div class="img-card-buttom-section">
-                    <p class="card-name">Jane Applesed</p>
-                    <p class="card-date">00/00</p>
+                    <p id="imgcardName" class="img-card-name">Jane Applesed</p>
+                    <div class="date">
+                        <p id="imgcardexpMonth" class="img-card-month">00</p>
+                        <span>/</span>
+                        <p id="imgcardexpYear" class="img-card-year">00</p>
+                    </div>
                 </div>
             </div>
             <div class="img-card-back-container">
-                <p class="card-cvv">000</p>
+                <p id="imgcardCVV" class="card-cvv">000</p>
             </div>
         </section>
         <section class="form-section">
             <form action="#" method="post" class="main-form">
                 <div class="form-part">
                     <label for="cardholder-name" class="ch-name">Cardholder Name</label>
-                    <input type="text" name="cardholder-name" id="chinput-name" class="input-form" placeholder="e.g John Doe">
+                    <input type="text" name="cardholder-name" id="chinputName" class="input-form" placeholder="e.g John Doe">
                 </div>
                 <div class="form-part">
                     <label for="cardnumber" class="card-number">Card Number</label>
-                    <input type="number" name="cardnumber" id="cardinput-number" class="input-form" placeholder="1234-5678-91011">
+                    <input type="number" name="cardnumber" id="cardinputNumber" class="input-form" placeholder="1234-5678-91011">
                     <span class="warning-text">Wrong format, number only</span>
                 </div>
                 <div class="form-bottom">
                     <div class="form-part">
                         <label for="card-date" class="card-date-section">Exp. Date (MM/YY)</label>
                         <div class="month-and-year-container">
-                            <input type="number" name="card-date" id="cardinput-date" class="input-form-month" placeholder="MM">
-                            <input type="number" name="card-date" id="cardinput-year" class="input-form-year" placeholder="YY">
+                            <input type="number" name="card-date" id="cardinputMonth" class="input-form-month" placeholder="MM">
+                            <input type="number" name="card-date" id="cardinputYear" class="input-form-year" placeholder="YY">
                         </div>
                         <span class="warning-text">Cant Be Blank</span>
                     </div>
                     <div class="form-part">
-                        <label for="card-cvc" class="card-cvc-section">CVC</label>
-                        <input type="number" name="card-cvc" id="cardinput-cvc" class="input-form" placeholder="CVC">
+                        <label for="card-cvv" class="card-cvv-section">CVC</label>
+                        <input type="number" name="card-cvv" id="cardinputcvv" class="input-form-CVV" placeholder="CVV">
                         <span class="warning-text">Cant Be Blank</span>
                     </div>
+                </div>
+                <div class="complete-state-form">
+                    <img src="/img/icon-complete.svg" alt="icon-complete">
+                    <h1 class="complete-state-title">Thank You!</h1>
+                    <p class="complete-state-paragraph">We've added your card details</p>
                 </div>
                 <div class="form-part">
                     <button type="submit" class="btn-submit" id="button-submit">Confirm</button>
